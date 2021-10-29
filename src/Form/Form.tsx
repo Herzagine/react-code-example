@@ -52,8 +52,8 @@ const Form: FC<FormProps> = ({ disabled }) => {
     isAllDay,
     dateFrom,
     timeFrom,
-  } = useSelector(getOnCallAvailability) as any;
-  const validation = useSelector(getOnCallAvailabilityValidation) as any;
+  } = useSelector(getOnCallAvailability);
+  const validation = useSelector(getOnCallAvailabilityValidation);
 
   const timePickerClasses = useMemo(
     () => ({ root: classes.timePickerRoot }),

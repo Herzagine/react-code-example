@@ -36,7 +36,7 @@ const OnCallDutyForm = () => {
 
   const onCallTagId = useSelector(getOnCallTagId);
   const timeZoneId = useSelector(getResourceLocationTimeZoneId);
-  const onCallAvailability = useSelector(getOnCallAvailability) as any;
+  const onCallAvailability = useSelector(getOnCallAvailability);
   const isOnCallAvailabilitySaving = useSelector(getIsOnCallAvailabilitySaving);
 
   const errorMessageLabels = useErrorMessageLabels();
